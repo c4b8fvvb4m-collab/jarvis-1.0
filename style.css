@@ -1,13 +1,65 @@
-body {font-family: "Trebuchet MS", Arial, sans-serif;
+body {
     margin: 0;
     min-height: 100vh;
-    background: #050a12;
+
+    /* Deep navy background */
+    background:
+        radial-gradient(circle at center, #071a2e 0%, #020812 55%, #01040a 100%);
+
     color: #00d9ff;
-    font-family: Arial, sans-serif;
+
+    /* Futuristic font */
+    font-family: "Trebuchet MS", Arial, sans-serif;
+
+    /* Perfectly center everything */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;
+
+    text-align: center;
+    overflow: hidden;
+}
+
+/* JARVIS title */
+h1 {
+    margin: 0;
+    font-size: 52px;
+    letter-spacing: 10px;
+    font-weight: 600;
+
+    color: #00d9ff;
+
+    /* Arc-reactor style glow */
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #00d9ff,
+        0 0 20px #00d9ff,
+        0 0 40px #008cff,
+        0 0 70px #0066ff;
+
+    animation: reactorGlow 3s ease-in-out infinite;
+}
+
+/* Gentle glowing effect */
+@keyframes reactorGlow {
+    0%, 100% {
+        text-shadow:
+            0 0 5px #ffffff,
+            0 0 10px #00d9ff,
+            0 0 20px #00d9ff,
+            0 0 40px #008cff;
+    }
+
+    50% {
+        text-shadow:
+            0 0 8px #ffffff,
+            0 0 18px #00d9ff,
+            0 0 35px #00d9ff,
+            0 0 65px #008cff,
+            0 0 90px #0066ff;
+    }
+}
 }
 
 h1 {
